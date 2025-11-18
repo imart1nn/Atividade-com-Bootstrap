@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>AgoraNews</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .placar-container {
+  display: block; /* Usa Flexbox para alinhar os times lado a lado */
+  justify-content: space-around; /* Espaço entre os times */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  width: 100%;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.time-casa,
+.time-visitante {
+  text-align: center;
+}
+
+.nome-time {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.pontuacao {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #0056b3;
+}
+    </style>
+
+    
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Sobre</h4>
+          <p class="text-muted">Somos um pequeno jornal local que está começando seu trabalho no mundo jornalístico.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contato</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">X</a></li>
+            <li><a href="#" class="text-white">Instagram</a></li>
+            <li><a href="#" class="text-white">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>AgoraNews</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <img src="/imgs/bozo.jpg">
+            <div class="card-body">
+              <h3>Bolsonaro na Papuda ou Papudinha? Como são as prisões que podem recebê-lo</h3>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <img src="/imgs/enem.jpg">
+
+            <div class="card-body">
+              <h4>Os dados que revelam o abismo entre ricos e pobres e brancos e negros no ensino médio do Brasil</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <img src="/imgs/alemao.jpg">
+
+            <div class="card-body">
+              <h4>Líder alemão diz ter ficado feliz ao ir embora de Belém; prefeito chama fala de 'arrogante e preconceituosa'</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="/imgs/trump.jpg">
+
+            <div class="card-body">
+              <h4>Por que Trump começou a dar tanta atenção à América do Sul (e o que conseguiu com isso)</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <img src="/imgs/vasco.jpg">
+
+            <div class="card-body">
+              <h4>"Sou Vasco da Gama, meu bem": os 80 anos do primeiro campeão invicto de terra e mar</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <img src="/imgs/6.jpg">
+
+            <div class="card-body">
+              <h4>Botafogo x Sport: dicas, palpites e chances no Brasileirão</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="placar-container">
+            <div class="time-casa">
+              <h2 class="nome-time">Grêmio</h2>
+              <div class="pontuacao">3</div>
+            </div>
+            <div class="time-visitante">
+              <h2 class="nome-time">Inter</h2>
+              <div class="pontuacao">2</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="/imgs/tga.jpg">
+
+            <div class="card-body">
+              <h3>The Game Awards 2025 | Confira os indicados ao "Oscar" dos games</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <img src="/imgs/gaga.jpg">
+
+            <div class="card-body">
+              <h3>Lady Gaga revela surto psicótico em 2017, ano em que cancelou show no Rock in Rio</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <img src="/imgs/wicked-2.jpg">
+
+            <div class="card-body">
+              <h3>'Wicked: Parte 2' aprofunda o musical com desfecho que pode cansar, mas emociona</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card shadow-sm">
+            <img src="/imgs/dua.jpg">
+
+            <div class="card-body">
+              <h5><strong>Dua Lipa no Brasil</strong></h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Voltar ao início</a>
+    </p>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
